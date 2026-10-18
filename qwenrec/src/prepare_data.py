@@ -9,6 +9,12 @@ VOCAB_SIZE = 500_000
 TEST_WINDOW = 86_400  # last day by timestamp → test
 
 def main():
+    """Prepare vocab and sequences for Next Item Prediction from listens.parquet.
+
+    Данные: data/listens.parquet
+    Проверка: checks/check.py
+    Используется в: results/vocab.parquet, results/sequences.parquet
+    """
     # 1. Read listens
     listens = pq.read_table("data/listens.parquet", columns=["uid", "timestamp", "item_id"])
     uid = listens["uid"].to_numpy()

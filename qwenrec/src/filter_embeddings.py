@@ -10,6 +10,12 @@ OUT_PATH = "data/embeddings_listens.parquet"
 
 
 def main() -> None:
+    """Filter content embeddings to only item_ids present in listens.parquet.
+
+    Данные: data/embeddings.parquet, data/listens.parquet
+    Проверка: (нет в checks/check.py)
+    Используется в: data/embeddings_listens.parquet
+    """
     emb = pd.read_parquet(EMB_PATH)
     lis = pd.read_parquet(LIS_PATH, columns=["item_id"])
 
