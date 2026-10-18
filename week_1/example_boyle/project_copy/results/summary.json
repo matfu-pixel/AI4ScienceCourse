@@ -1,0 +1,16 @@
+{
+  "n_total": 12,
+  "n_outliers": 1,
+  "outlier_rows": [
+    2.2
+  ],
+  "pv_mean_kpa_l": 249.3182,
+  "pv_std_kpa_l": 2.639727935981301,
+  "pv_median_kpa_l": 248.37959999999995,
+  "pv_min_kpa_l": 246.408,
+  "pv_max_kpa_l": 253.38560000000004,
+  "pv_rel_std_pct": 1.0587786755966075,
+  "fit_C_kpa_l": 248.89825253381863,
+  "fit_r2": 0.9993484659463346,
+  "temperature_k": 293.15
+}
