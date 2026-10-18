@@ -1,0 +1,7 @@
+t,действие,наблюдение,φ
+0,list_files({}),listens.csv,
+1,"read_file({""path"":""listens.csv""})","uid,timestamp,item_id | 100,39420,8326270 | 100,39420,1441281 | 100,39625,28",
+2,"write_file({""path"":""result.csv"",""content"":""uid,n_unique\n100",записано 33 символов в result.csv,
+3,ответ,"
+
+Создан файл result.csv с количеством уникальных item_id для каждого ",1
